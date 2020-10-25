@@ -1,6 +1,5 @@
 import requests
 import json
-from pymemcache.client import base
 
 class API_query:
 
@@ -14,7 +13,6 @@ class API_query:
         res = self.cache.get("page_" + str(num_page))
         if res is None :
 
-            #token = client.get('token')
             token = "acc910f986314bc6d05f98851e9f562c72641712"
             headers = {"Authorization": "Bearer " + token}
 

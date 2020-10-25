@@ -1,6 +1,5 @@
 import requests
 import json
-from pymemcache.client import base
 
 class Connector:
     def __init__(self, apiKey, url, cache_connection):
